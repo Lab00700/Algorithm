@@ -33,7 +33,7 @@ jobs:
       run: |
         git add .
         git diff
-        git config --local user.email "zerglisk123@naver.com"
-        git config --local user.name "Lab00700"
+        git config --local user.email "piwhyjey@naver.com"
+        git config --local user.name "Lab00700-Auto-Update"
         git commit -m "Automatically Update README.md file"
         git push
