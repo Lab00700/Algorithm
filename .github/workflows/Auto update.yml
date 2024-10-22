@@ -1,7 +1,4 @@
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
-
-name: Python application
+name: Auto update
 
 on:
   push:
@@ -28,12 +25,12 @@ jobs:
         python -m pip install --upgrade pip
     - name: Run Update Python Script 
       run: |
-        python utils/count_files.py
-    - name: Run Update README.md File
+        python utils/Auto update.py
+    - name: Run Update Solving count.md File
       run: |
         git add .
         git diff
         git config --local user.email "piwhyjey@naver.com"
         git config --local user.name "Lab00700-Auto-Update"
-        git commit -m "Automatically Update README.md file"
+        git commit -m "Automatically Update Solving count.md file"
         git push
