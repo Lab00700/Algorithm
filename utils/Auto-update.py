@@ -38,5 +38,5 @@ def update_solving_count():
 
 if __name__ == "__main__":
     solving_count = update_solving_count()
-    with open("./Solving count.md", 'w', encoding='utf-8') as f:
+    with open("./Solving-count.md", 'w', encoding='utf-8') as f:
         f.write(solving_count)
