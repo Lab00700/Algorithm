@@ -16,7 +16,7 @@ def count_programmers():
 
 
 def programmers_make_info(levels_info, total_count):
-    info = f"### 프로그래머스 레벨 별 문제 수\n총 문제 수 : {total_count}\n마지막 업데이트 : {datetime.now().strftime('%Y-%m-%d %H:%M')}\n"
+    info = f"### 프로그래머스 레벨 별 문제 수\n총 문제 수 : {total_count}\n\n마지막 업데이트 : {datetime.now().strftime('%Y-%m-%d %H:%M')}\n\n"
     for level_info in levels_info:
         temp = f"- {level_info[0]} 레벨 문제 수 : {level_info[1]}\n"
         info += temp
