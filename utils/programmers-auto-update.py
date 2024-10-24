@@ -1,7 +1,7 @@
 from datetime import datetime, timezone, timedelta
 import os
 
-def count_programmers_info():
+def programmers_count_info():
     total_count = 0
     levels = os.listdir("./프로그래머스")
     levels.sort()
@@ -18,6 +18,14 @@ def count_programmers_info():
     return programmers_info
 
 if __name__ == "__main__":
-    solving_count = count_programmers_info()
-    with open("./md_files/programmers-solving-count.md", 'w', encoding='utf-8') as f:
-        f.write(solving_count)
+    file_number=0
+    file_name="programmers-solving-count"
+    with open(f"./md_files/0-md-files-number.md", 'r', encoding='utf-8') as f:
+        md_files_number=f.read()
+        md_files=md_files_number.split()
+        for md_file in md_files:
+            if file_name in md_file:
+                file_number=md_file.split('-')[0]
+    content = programmers_count_info()
+    with open(f"./md_files/{file_number}-{file_name}.md", 'w', encoding='utf-8') as f:
+        f.write(content)
