@@ -1,4 +1,4 @@
-name: Auto update
+name: solving count auto update
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
         python -m pip install --upgrade pip
     - name: Run Update Python Script 
       run: |
-        python utils/Auto-update.py
+        python utils/solving-count-auto-update.py
     - name: Run Update Solving-count.md File
       run: |
         git add .
