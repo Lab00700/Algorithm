@@ -10,7 +10,7 @@ def readme_content_info():
             for md_file in md_files:
                 if md_file_name[2:] in md_file and md_file_name != md_file:
                     os.renames(md_file_name, md_file)
-        md_files_list = md_files
+        md_files_list = md_files[1:]
 
     for md_file in md_files_list:
         try:
