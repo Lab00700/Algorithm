@@ -12,7 +12,7 @@ def programmers_count_info():
         count_info+=f"- {level} 레벨 : {count}\n"
         total_count += count
 
-    programmers_info = (f"### 프로그래머스 - Update Date. {datetime.now(timezone(timedelta(hours=9))).strftime('%Y-%m-%d %H:%M')}\n"
+    programmers_info = (f"### 프로그래머스 Update Date. {datetime.now(timezone(timedelta(hours=9))).strftime('%Y-%m-%d %H:%M')}\n"
                         f"#### 총 문제 수 : {total_count}\n")
     programmers_info+=count_info
     return programmers_info
