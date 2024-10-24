@@ -28,7 +28,7 @@ jobs:
       run: |
         git add .
         git diff
-        git config --global user.email "piwhyjey@naver.com"
-        git config --global user.name "Lab00700-Auto-Update"
+        git config --local user.email "piwhyjey@gmail.com"
+        git config --local user.name "Lab00700-Auto-Update"
         git commit -m "Automatically Update programmers-solving-count.md file"
         git push
