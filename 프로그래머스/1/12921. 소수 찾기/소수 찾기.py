@@ -6,6 +6,7 @@ def solution(n):
     for i in range(n):
         for k in range(i,n,i+1):
             temp[k]+=1
+            
     for i in range(n):
         if temp[i]==2:
             answer+=1
