@@ -18,7 +18,7 @@ def readme_content_info():
                 file_content = f.read()
                 if file_content != '':
                     readme_info+=(f"{file_content}\n"
-                                f"# ")
+                                f"# \n")
         except:
             open(f"./md_files/{md_file}", 'w', encoding='utf-8')
     return readme_info
