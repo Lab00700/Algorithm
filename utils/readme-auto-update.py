@@ -13,13 +13,15 @@ def readme_content_info():
         md_files_list = md_files
 
     for md_file in md_files_list:
-        with open(f"./md_files/{md_file}", 'r', encoding='utf-8') as f:
-            file_content = f.read()
-            readme_info+=f"{file_content}\n\n"
-
+        try:
+            with open(f"./md_files/{md_file}", 'r', encoding='utf-8') as f:
+                file_content = f.read()
+                readme_info+=f"{file_content}\n\n"
+        except:
+            pass
     return readme_info
 
 if __name__ == "__main__":
     content = readme_content_info()
-    with open(f".README.md", 'w', encoding='utf-8') as f:
+    with open(f"README.md", 'w', encoding='utf-8') as f:
         f.write(content)
