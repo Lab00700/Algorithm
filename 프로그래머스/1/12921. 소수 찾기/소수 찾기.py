@@ -9,4 +9,5 @@ def solution(n):
     for i in range(n):
         if temp[i]==2:
             answer+=1
+            
     return answer
