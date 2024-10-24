@@ -2,10 +2,7 @@ name: programmers auto update
 
 on:
   push:
-    paths:
-      - "프로그래머스/*"
-    branches: [ main ]
-  pull_request:
+    paths: [ 프로그래머스 ]
     branches: [ main ]
 
 permissions:
@@ -13,9 +10,7 @@ permissions:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.12
