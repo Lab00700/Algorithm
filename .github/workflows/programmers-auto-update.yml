@@ -31,4 +31,4 @@ jobs:
         git config --local user.email "piwhyjey@naver.com"
         git config --local user.name "Lab00700-Auto-Update"
         git commit -m "Automatically Update programmers-solving-count.md file"
-        git push
+        git push origin master
