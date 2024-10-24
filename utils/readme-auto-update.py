@@ -20,9 +20,6 @@ def readme_content_info():
     return readme_info
 
 if __name__ == "__main__":
-    file_number=0
-    file_name="programmers-solving-count"
-
     content = readme_content_info()
     with open(f".README.md", 'w', encoding='utf-8') as f:
         f.write(content)
