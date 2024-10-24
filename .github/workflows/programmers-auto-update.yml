@@ -24,7 +24,7 @@ jobs:
     - name: Run Update Python Script 
       run: |
         python utils/programmers-auto-update.py
-    - name: Run Update Solving-count.md File
+    - name: Run Update programmers-solving-count.md File
       run: |
         git add .
         git diff
