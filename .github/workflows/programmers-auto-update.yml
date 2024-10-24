@@ -34,5 +34,5 @@ jobs:
         git diff
         git config --local user.email "piwhyjey@naver.com"
         git config --local user.name "Lab00700-Auto-Update"
-        git commit -m "Automatically Update Solving-count.md file"
+        git commit -m "Automatically Update Solving-count.md file - Programmers"
         git push
