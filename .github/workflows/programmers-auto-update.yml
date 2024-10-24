@@ -1,7 +1,9 @@
-name: solving count auto update
+name: programmers auto update
 
 on:
   push:
+    paths:
+      - "프로그래머스"
     branches: [ main ]
   pull_request:
     branches: [ main ]
@@ -15,17 +17,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python 3.9
-      uses: actions/setup-python@v2
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v3
       with:
-        python-version: 3.9
+        python-version: 3.12
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
     - name: Run Update Python Script 
       run: |
-        python utils/solving-count-auto-update.py
+        python utils/programmers-auto-update.py
     - name: Run Update Solving-count.md File
       run: |
         git add .
