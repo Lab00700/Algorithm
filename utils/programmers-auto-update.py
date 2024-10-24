@@ -26,6 +26,9 @@ if __name__ == "__main__":
         for md_file in md_files:
             if file_name in md_file:
                 file_number=md_file.split('-')[0]
+        for remove_file in os.listdir("./md_files"):
+            if file_name in remove_file:
+                os.remove(remove_file)
     content = programmers_count_info()
     with open(f"./md_files/{file_number}-{file_name}.md", 'w', encoding='utf-8') as f:
         f.write(content)
