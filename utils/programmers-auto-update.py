@@ -21,5 +21,5 @@ def count_programmers_info():
 
 if __name__ == "__main__":
     solving_count = count_programmers_info()
-    with open("./Solving-count.md", 'w', encoding='utf-8') as f:
+    with open("./md_file/Solving-count.md", 'w', encoding='utf-8') as f:
         f.write(solving_count)
