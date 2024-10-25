@@ -21,7 +21,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-    - name: Run Update programmers-auto-update.py
+    - name: Run programmers-auto-update.py
       run: |
         python utils/programmers-auto-update.py
     - name: Run Update programmers-solving-count.md File
@@ -32,7 +32,7 @@ jobs:
         git config --local user.name "Lab00700-Auto-Update"
         git commit -m "Automatically Update programmers-solving-count.md file"
         git push
-    - name: Run Update readme-auto-update.py
+    - name: Run readme-auto-update.py
       run: |
         python utils/readme-auto-update.py
     - name: Run Update README.md File
