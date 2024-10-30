@@ -35,7 +35,4 @@ def solution(friends, gifts):
     for p in pr.keys():
         if answer<pr[p]:
             answer=pr[p]
-    print(gi)
-    print(fr)
-    print(pr)
     return answer
