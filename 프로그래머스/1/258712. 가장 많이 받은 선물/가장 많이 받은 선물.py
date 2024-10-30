@@ -3,7 +3,6 @@ def solution(friends, gifts):
     gi={}
     pr={}
     answer = 0
-    leng=len(friends)
     for f in friends:
         fr[f]=0
         pr[f]=0
