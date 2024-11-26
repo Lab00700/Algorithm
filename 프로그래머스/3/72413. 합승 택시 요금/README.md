@@ -1,6 +1,6 @@
 # [level 3] 합승 택시 요금 - 72413 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/72413#qna) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/72413?language=python3) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 11월 26일 17:13:25
+2024년 11월 26일 17:13:41
 
 ### 문제 설명
 
