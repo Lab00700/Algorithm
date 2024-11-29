@@ -42,8 +42,9 @@ def solution(n, results):
     for d in dic_count:
         rank.append(dic_count[d])
     rank.sort()
-    for i in range(len(rank)):
+    n=len(rank)
+    for i in range(n):
         if rank[i]==i:
-            if (i!=len(rank)-1 and rank[i]!=rank[i+1]) or i==len(rank)-1:
+            if (i!=n-1 and rank[i]!=rank[i+1]) or i==n-1:
                 answer+=1
     return answer
