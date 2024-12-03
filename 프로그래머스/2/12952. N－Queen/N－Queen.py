@@ -13,7 +13,7 @@ def solution(n):
         for y in range(t): #각 x좌표에는 1개의 퀸만 들어갈 수 있으므로 y만 반복
             safe=True
             for cy in chess_y: #배치된 퀸들의 공격 범위에 현재 좌표가 포함되는지 확인
-                if y==cy or (cy-y if cy>y else y-cy)==c-chess_y[cy] :
+                if y==cy or (cy-y if cy>y else y-cy)==c-chess_y[cy] : #가로, 대각선방향에 퀸이 존재하는지 확인
                     safe=False
                     break
             if safe: #공격 범위로부터 안전하면 새로운 퀸 배치
