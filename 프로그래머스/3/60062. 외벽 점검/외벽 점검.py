@@ -7,11 +7,11 @@ def solution(n, weak, dist):
             return
         if len(weak)>1:
             com_min=-1
-            for i in range(len(weak)-1):
+            for i in range(len(weak)-1): #가장 거리가 짧은 점검 구간 찾기
                 t=weak[i+1]-weak[i]
                 if com_min==-1 or t<com_min:
                     com_min=t
-            if com_min>=dist[-1] and len(weak)>len(dist)*2:
+            if com_min>=dist[-1] and len(weak)>len(dist)*2: #가장 짧은 점검 구간이 현재 최대 이동 거리값과 같거나 크며, weak 길이가 dist 길이*2보다 길면 더 확인할 필요가 없음
                 return
         for w in weak:
             temp_dist=dist.copy()
@@ -29,5 +29,3 @@ def solution(n, weak, dist):
                 check(temp_weak,temp_dist,cnt+1)
     check(weak,dist,0)
     return answer
-
-print(solution(16, [1,2,3,4,5,7,8,10,11,12,14,15], [4,2,1,1]))
